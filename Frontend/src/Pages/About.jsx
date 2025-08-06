@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/NAvbar"
+import Navbar from "../Components/NavBar"
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
