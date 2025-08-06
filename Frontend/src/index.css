@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  overflow: hidden;
+}
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    45deg,
+    #07eed3,
+    #ec4899,
+    #9675e1,
+    #14b8a6,
+    #f7d2c4,
+    #9f6565
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-x 3s ease-in infinite;
+}
+
+.swiper-pagination-bullet {
+  background: #aaa !important;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #10b981 !important; /* teal-500 */
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+@keyframes moveStar {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
