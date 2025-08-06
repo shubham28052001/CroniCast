@@ -1,10 +1,10 @@
 // src/Pages/Home.jsx
 import React, { useEffect, useState, useContext } from "react";
 import API from "../utils/axios";
-import BlogCard from "../Components/BlogCard";
+import BlogCard from "../Components/Blogcard";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import Navbar from "../Components/NAvbar"; 
+import Navbar from "../Components/NavBar"; 
 import { UserContext } from "../Contexts/UserContext"; 
 
 const Home = () => {
