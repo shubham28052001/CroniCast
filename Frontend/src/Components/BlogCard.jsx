@@ -14,6 +14,11 @@ const BlogCard = ({ blog}) => {
     const { user } = useContext(UserContext);
   const [liked, setLiked] = useState(blog.likes?.includes(user?._id));
   const [likeCount, setLikeCount] = useState(blog.likes?.length || 0);
+  useEffect(() => {
+  if (user && blog.likes) {
+    setLiked(blog.likes.includes(user._id));
+  }
+}, [user, blog.likes]);
 
 useEffect(() => {
   console.log("👤 currentUserId:", user?._id);
