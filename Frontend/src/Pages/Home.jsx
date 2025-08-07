@@ -4,7 +4,7 @@ import API from "../utils/axios";
 import BlogCard from "../Components/BlogCard";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import Navbar from "../Components/NavBar"; 
+import Navbar from "../Components/Navbar"; 
 import { UserContext } from "../Contexts/UserContext"; 
 
 const Home = () => {

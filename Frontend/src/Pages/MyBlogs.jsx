@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../Contexts/UserContext";
 import API from "../utils/axios";
 import BlogCard from "../Components/MyBlogCard"; // ✅ Your reusable card
-import Navbar from "../Components/NavBar";
+import Navbar from "../Components/Navbar";
 const MyBlogs = () => {
   const { user, loading: userLoading } = useContext(UserContext);
   const [blogs, setBlogs] = useState([]);
