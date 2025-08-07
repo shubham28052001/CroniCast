@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 const MyBlogs = () => {
   const { user, loading: userLoading } = useContext(UserContext);
   const [blogs, setBlogs] = useState([]);
-  const [loading, setLoading] = useState(true); // 🌀 New loader state
+  const [loading, setLoading] = useState(true); 
 const handleBlogDelete = (deletedId) => {
   setBlogs(prevBlogs => prevBlogs.filter(blog => blog._id !== deletedId));
 };

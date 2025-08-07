@@ -85,17 +85,17 @@ const Front = () => {
 }, []);
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-black p-6 relative overflow-hidden">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-red-400 p-6 relative overflow-hidden">
             {/* Background moving dots */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-                {[...Array(20)].map((_, i) => (
+                {[...Array(80)].map((_, i) => (
                     <div
                         key={i}
-                        className="absolute w-2 h-2 bg-teal-400 rounded-full opacity-40 blur-sm"
+                        className="absolute w-4 h-4 bg-black rounded-full opacity-40 blur"
                         style={{
                             top: `${Math.random() * 100}%`,
                             left: `${Math.random() * 100}%`,
-                            animation: `moveStar ${5 + Math.random() * 5}s linear infinite`,
+                            animation: `moveStar ${10 + Math.random() * 10}s linear infinite`,
                         }}
                     />
                 ))}

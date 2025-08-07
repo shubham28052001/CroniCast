@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import API from "../utils/axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../Components/NavBar";
+import Navbar from "../Components/Navbar";
 
 const CreateBlog = () => {
   const navigate = useNavigate();
